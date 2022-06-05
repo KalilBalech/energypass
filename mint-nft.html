@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style-2.css">
+    <title>Crie seu NFT</title>
+</head>
+<body>
+    <section class="first-page">
+        <header>
+            <a class="logo" href="index.html">
+                <img src="images/Logo_Favel.png" alt="Logo">
+            </a>
+            
+            <button class="btn btn-primary" id="submit" onclick="login();">Conecte sua Carteira</button>
+        </header>
+        <section class="first">
+            <div class="intro">
+                <h1 class="main-title"> Crie Seu <span>NFT</span> e Mostre<br> para o Mundo a <span>Arte Brasileira</span></h1>
+                <h2 class="main-subtitle">Venda sua Arte <span>e Aumente seu Impacto</span></h2>
+            </div>
+            
+            <form class="form">
+                <img src="" alt="preview" id="preview">
+                <a href="" class="os-link"></a>
+                <div class="upload-file">
+                    <label for="upload-file">Enviar Arquivo</label>
+                    <input type="file" id="file">
+                </div>
+                <div class="name-input">
+                    <label for="name">Nome</label><br>
+                    <input type="text" id="name">
+                </div>
+                <div class="description-input">
+                    <label for="description">Descrição</label><br>
+                    <input type="text" id="description">
+                </div>
+                <!--<div class="wallet-address-input">
+                    <label for="address">Wallet Address</label>
+                    <input type="text" id="address">
+                </div> -->
+                <div class="form-end">
+                    <button  class="btn btn-primary" type="button" id="upload" onclick="up();">Crie seu NFT</button>
+                    <a href="" id="view" >Veja na OpenSea</a>
+                </div>
+
+            </form>
+        </section>
+    </section>
+    <footer>
+        <div class="left">
+            <img src="images/Logo_Favel_branco.png" alt="Logo">
+            <h3 class="email">contato@favelart.com</h3>
+        </div>
+        <div class="right">
+            <h3 class="copyright">Copyright © 2022 favelART, Inc.</h3>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+    <script src="javascript/index-2.js"> </script>
+
+    
+    
+    <!--<script src="javascript/index-21.js">
+    </script> -->
+</body>
+</html>
