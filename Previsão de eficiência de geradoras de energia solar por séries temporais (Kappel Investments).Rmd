@@ -62,9 +62,10 @@ time_series$fator_capacidade <- (time_series$fator_capacidade - min)/(max - min)
 #Previsão da série temporal pelo método de Holt
 ts <- ts(time_series$fator_capacidade)
 previsao = holt(ts, damped = T, type = "multiplicative")
-forecast::autoplot(previsao, series = "Conjunto de Teste")+
+plot <- forecast::autoplot(previsao, series = "Conjunto de Teste")+
   ylab("Fator de capacidade das geradoras solares")+
   xlab("Tempo")
+plot
 
 #Cálculo do valor médio e do desvio padrão do conjunto de dados
 #(utilizado para mensurar a área necessária para aluguel por parte do cliente em função do seu
